@@ -604,5 +604,22 @@
             </div>
         </div>
     </div>
+
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <script>
+        $(document).scroll(function() {
+            var position = $(window).scrollTop();
+            var navEl = $('.nav-wrapper');
+
+            if (position >= 300) {
+                if (!navEl.hasClass('nav-wrapper-black'))
+                    navEl.addClass('nav-wrapper-black');
+            } else {
+                 if (navEl.hasClass('nav-wrapper-black'))
+                    navEl.removeClass('nav-wrapper-black');
+            }
+        });
+    </script>
+
 </body>
 </html>
