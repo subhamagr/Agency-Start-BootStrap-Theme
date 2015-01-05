@@ -4,8 +4,29 @@ body {
 
 .nav-wrapper {
   position: fixed;
-  top: 20px;
   width: 100%;
+}
+
+.nav-wrapper-black {
+  background-color: black;
+  z-index: 100;
+  height: 60px;
+}
+
+.nav-wrapper-black .site-brand
+{
+  padding-top: 10px;
+  font-size: 25px;
+}
+
+.nav-wrapper-black .nav-menu > li > a {
+  display: inline-block;
+  color: white;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 14px 10px;
+  text-transform: uppercase;
+  text-decoration: none;
 }
 
 .site-brand {
@@ -15,6 +36,7 @@ body {
   font-size: 31px;
   margin-left: 50px;
   float: left;
+   padding-top: 15px;
 }
 
 .nav-menu {
@@ -384,14 +406,17 @@ text-align: center;
 .links
 {
   margin-top: -4px;
-  margin-left: 145px;
   list-style: none;
   display:block;
+  text-align: center;
+}
+.links > li
+{
+  display: inline-block;
 }
 
 .links > li > a > i
 {
-  float:left;
   width:33% ;
   display: inline-block;
   margin: 3px 5px;
