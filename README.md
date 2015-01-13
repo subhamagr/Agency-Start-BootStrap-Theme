@@ -9,7 +9,8 @@ It is a BootStrap Theme.<br>
 
 <h2>Languages Used</h2>
   - HTML<br>
-  - CSS
+  - CSS<br>
+  - jQuery 
 
 <h2>Fonts Used</h2>
   - <a href="http://fortawesome.github.io/Font-Awesome/">FontAwesome</a>
