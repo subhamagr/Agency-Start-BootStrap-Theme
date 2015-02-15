@@ -208,26 +208,32 @@ text-align: center;
 {
   display: inline-block;
   width:33%;
+  border-bottom: 50px solid transparent;
 }
 
 .portfolio-image
 {
   display: block;
 }
+
 .portfolio-image-container
 {
   position: relative;
-  margin: 0 58px;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
+  width: 320px;
 }
 .portfolio-image-hover
 {
   position: absolute;
   top: 0;
-  width: 100%;
+  width: 320px;
   height: 100%;
   opacity: 0;
   background: rgba(254,209,54,.9);
 }
+
 .portfolio-image-hover:hover{
   opacity: 1;
 }
@@ -462,7 +468,7 @@ text-align: center;
 .muted
 {
   color:#777;
-  font-size: 16x;
+  font-size: 16px;
 }
 
 .partners
@@ -600,7 +606,7 @@ textarea
 
 .footer-each-link
 {
-  width: 387.609;
+  width: 387.609px;
   height: 26px;
   margin-top: 0px; 
   display: inline-block;
