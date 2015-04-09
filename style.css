@@ -40,13 +40,25 @@ body {
 }
 
 .nav-menu {
-  float: right;
+  
   margin-right: 50px;
 }
 
 .nav-menu>li {
     float: none;
   }
+
+  @media (max-width: 767px){
+  .nav-menu {
+    float: left;
+  }
+}
+
+@media (min-width: 768px){
+  .nav-menu {
+    float: right;
+  }
+}
 
 @media (max-width: 767px){
   .nav-menu>li {
