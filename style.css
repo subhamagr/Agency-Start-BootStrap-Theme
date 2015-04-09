@@ -40,13 +40,32 @@ body {
 }
 
 .nav-menu {
-  float: right;
+  
   margin-right: 50px;
 }
 
-.nav-menu > li {
-  float: left;
+.nav-menu>li {
+    float: none;
+  }
+
+  @media (max-width: 767px){
+  .nav-menu {
+    float: left;
+  }
+  .nav-menu>li {
+    float: none;
+  }
 }
+
+@media (min-width: 768px){
+  .nav-menu {
+    float: right;
+  }
+  .nav-menu>li {
+    float: left;
+  }
+}
+
 
 .nav-menu > li > a {
   display: inline-block;
@@ -653,3 +672,8 @@ textarea
 {
   background-color: #fec503;
 }
+
+@media (min-width: 500px) and (max-width: 1000px) {
+    .title { font-size: 1.5em; }
+}
+
