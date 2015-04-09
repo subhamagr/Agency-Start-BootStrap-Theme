@@ -44,8 +44,14 @@ body {
   margin-right: 50px;
 }
 
-.nav-menu > li {
-  float: right;
+.nav-menu>li {
+    float: none;
+  }
+
+@media (max-width: 767px){
+  .nav-menu>li {
+    float: none;
+  }
 }
 
 @media (min-width: 768px){
