@@ -48,6 +48,17 @@ body {
   float: none;
 }
 
+@media (min-width: 768px){
+  .nav-menu>li {
+    float: left;
+  }
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+    .title { font-size: 1.5em; }
+}
+
+
 .nav-menu > li > a {
   display: inline-block;
   color: white;
@@ -657,3 +668,4 @@ textarea
 @media (min-width: 500px) and (max-width: 1000px) {
     .title { font-size: 1.5em; }
 }
+
