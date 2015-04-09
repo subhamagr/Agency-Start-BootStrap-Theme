@@ -45,7 +45,7 @@ body {
 }
 
 .nav-menu > li {
-  float: left;
+  float: none;
 }
 
 .nav-menu > li > a {
@@ -652,4 +652,8 @@ textarea
 .links-footer > li > a > i:hover 
 {
   background-color: #fec503;
+}
+
+@media (min-width: 500px) and (max-width: 1000px) {
+    .title { font-size: 1.5em; }
 }
