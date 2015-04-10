@@ -168,6 +168,18 @@ body {
   color:  #777;
 }
 
+@media (max-width: 767px){
+   .heading .section-heading {
+        width: 240px;
+        margin: 0px auto;
+   }
+
+   .heading {
+        padding: 45px 0 34px 0;
+   }
+}
+
+
 .items
 {
   display: block;
@@ -185,7 +197,7 @@ body {
     #services {
         height: 1090px;
     }
-    
+
     .items .item{
         display: block;
         margin: 0px auto;
@@ -203,9 +215,6 @@ body {
     .items .item .para {
         width: 100%;
     }
-
-
-
 }
 
 .item
@@ -431,14 +440,12 @@ text-align: center;
 .staff-bg
 {
   background-color: #f7f7f7;
-  height: 1100px;
 }
 
 .staffs
 {
   margin: 15px 15px;
   display: block;
-  height: 550px;
 }
 
 .staff
@@ -504,6 +511,30 @@ text-align: center;
 .links > li > a > i:hover 
 {
   background-color: #fec503;
+}
+
+@media (max-width: 767px){
+    .staff-bg {
+        height: 1510px;
+    }
+
+    .staffs .staff{
+        display: block;
+        margin: 0px auto;
+    }
+
+    .staffs .staff .staff-image {
+        margin-left: -22px;
+    }
+}
+
+@media (min-width: 768px){
+    .staff-bg {
+        height: 1100px;
+    }
+    .staffs .staff .staff-image {
+        margin-left: auto;
+    }
 }
 
 
