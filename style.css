@@ -175,9 +175,41 @@ body {
   height: 450px;
 }
 
+@media (min-width: 768px){
+    .item{
+        display: inline-block;
+    }
+}
+
+@media (max-width: 767px){
+    #services {
+        height: 1090px;
+    }
+    
+    .items .item{
+        display: block;
+        margin: 0px auto;
+    }
+
+    .heading .section-heading {
+        width: 240px;
+        margin: 0px auto;
+    }
+
+    .heading {
+        padding: 45px 0 34px 0;
+    }
+
+    .items .item .para {
+        width: 100%;
+    }
+
+
+
+}
+
 .item
 {
-  display: inline-block;
   width:33%;
 }
 
