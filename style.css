@@ -4,8 +4,13 @@ body {
 
 .nav-wrapper {
   position: fixed;
-  width: 100%;
+  display:block;
+  text-align:center; /*Specify the alignment of the whole UL if UL is not width:100%;*/
+  letter-spacing:normal;
+  width : 100%;
 }
+
+
 
 .nav-wrapper-black {
   background-color: black;
@@ -40,7 +45,7 @@ body {
 }
 
 .nav-menu {
-  
+
   margin-right: 50px;
 }
 
@@ -95,6 +100,71 @@ body {
   background-color: #fed136;
 
 }
+
+@media only screen and (max-width: 930px)
+{
+
+
+    /*override the original settings*/
+    .nav-wrapper ul {
+        width: 100%;
+        display: none;
+        border-radius:0;
+        background:rgba(0,153,255,0.6499999999999999);
+    }
+
+    .nav-wrapper li {
+        position:relative;
+        display:block;
+        font-size:20px;
+        text-align:left;
+        border-bottom: 1px solid rgba(0,0,0,0.2);
+    }
+    .nav-wrapper .offset300 {
+        left:0;
+    }
+
+    /* All the following are for the div.menu-icon (pure CSS) */
+    .nav-wrapper div.menu-icon {
+        font-size:32px;/*icon size*/
+		display: block;
+        position: relative;
+		width: 40px;
+		height:36px;
+        text-align:center;
+		cursor: pointer;
+		-moz-user-select:none;
+        -webkit-user-select: none;
+        background-color: #eee;
+        border-radius: 3px;
+
+        margin-bottom:6px;
+        /*align the icon to the right*/
+        margin-left: auto;
+        margin-right: 11px;
+    }
+
+    .nav-wrapper div.menu-icon::before {
+        content: "";
+        position: absolute;
+        top: 0.25em;
+        left: 4px;
+        width: 1em;
+        height: 0.125em;
+        border-top: 0.375em double #333;
+        border-bottom: 0.125em solid #333;
+        box-sizing: content-box;
+    }
+
+    .nav-rapper div.menu-icon-active {
+        background-color: #333;
+    }
+
+    .nav-wrapper div.menu-icon-active::before {
+        border-color: #eee;
+    }
+}
+
 .main-wrapper {
   background: url('header.jpg');
   height: 400px;

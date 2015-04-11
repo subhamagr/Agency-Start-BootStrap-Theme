@@ -1,13 +1,14 @@
+
 $(document).scroll(function () {
     var position = $(window).scrollTop();
     var navEl = $('.nav-wrapper');
 
-    if (position >= 300) 
+    if (position >= 300)
     {
         if (!navEl.hasClass('nav-wrapper-black'))
             navEl.addClass('nav-wrapper-black');
-    } 
-    else 
+    }
+    else
     {
         if (navEl.hasClass('nav-wrapper-black'))
             navEl.removeClass('nav-wrapper-black');
@@ -18,12 +19,12 @@ $(document).scroll(function () {
     var position = $(window).scrollTop();
     var navEl = $('.nav').first();
 
-    if (position >= 700 & position <= 1538) 
+    if (position >= 700 & position <= 1538)
     {
         if (!navEl.hasClass('nav-yellow'))
             navEl.addClass('nav-yellow');
-    } 
-    else 
+    }
+    else
     {
         if (navEl.hasClass('nav-yellow'))
             navEl.removeClass('nav-yellow');
@@ -97,3 +98,6 @@ $(document).ready(function(){
         return false;
     });
 });
+
+
+
