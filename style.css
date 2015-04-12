@@ -39,9 +39,9 @@ body {
   color: #fed136;
   text-decoration: none;
   font-size: 31px;
-  margin-left: 50px;
   float: left;
-   padding-top: 15px;
+  margin-left: 31px;
+  margin-top: 5px;
 }
 
 .nav-menu {
@@ -137,11 +137,12 @@ body {
         -webkit-user-select: none;
         background-color: #eee;
         border-radius: 3px;
-
+        float: right;
         margin-bottom:6px;
+        right: 10px;
+        top: 5px;
         /*align the icon to the right*/
-        margin-left: auto;
-        margin-right: 11px;
+
     }
 
     .nav-wrapper div.menu-icon::before {
